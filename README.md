@@ -1,7 +1,7 @@
 # ZINB (Zero Inflated Negative Binomial)
 
 
-As numpy array:
+As **NumPy** array:
 
 ```python
 from scipy.stats import nbinom
@@ -9,7 +9,7 @@ def ZINB(r_neg=4, p_neg=0.5, N=1000, p_zero=0.5):
     return np.random.binomial(size=N, n=1, p=(1-p_zero))*nbinom.rvs(r_neg, p_neg, size=N)
 ```
 
-As torch-tensor:
+As **PyTorch** tensor:
 
 ```python
 import torch
